@@ -1,1 +1,110 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Jiu Jitsu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: #fff;
+            padding: 2rem;
+        }
+        .container {
+            padding: 1rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Academia de Jiu Jitsu</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#aulas">Aulas</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#blog">Blog</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2>Bem-vindo à nossa Academia de Jiu Jitsu!</h2>
+        <p>Treine com os melhores e alcance seus objetivos.</p>
+    </section>
+
+    <div class="container">
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>Conheça a nossa história e a equipe de instrutores. Estamos aqui para ajudar você a alcançar seus objetivos no Jiu Jitsu!</p>
+        </section>
+
+        <section id="aulas" class="section">
+            <h2>Aulas e Programas</h2>
+            <p>Veja os tipos de aulas que oferecemos, horários e preços. Encontre o plano que melhor se adapta a você.</p>
+        </section>
+
+        <section id="galeria" class="section">
+            <h2>Galeria</h2>
+            <p>Confira fotos e vídeos das nossas aulas e eventos.</p>
+        </section>
+
+        <section id="blog" class="section">
+            <h2>Blog</h2>
+            <p>Leia nossos artigos e atualizações sobre técnicas, eventos e novidades da academia.</p>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Endereço: Rua Exemplo, 123 - Cidade - Estado</p>
+            <p>Telefone: (00) 0000-0000</p>
+            <p>E-mail: contato@academiajiujitsu.com.br</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Academia de Jiu Jitsu. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
