@@ -1,110 +1,151 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia de Jiu Jitsu</title>
+    <title>Barbearia Exemplo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
-            background: #333;
+            background-color: #333;
             color: #fff;
-            padding: 1rem;
+            padding: 1em 0;
             text-align: center;
         }
-        nav a {
-            color: #fff;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
             margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
         }
-        .banner {
-            background: url('banner.jpg') no-repeat center center/cover;
-            height: 300px;
-            text-align: center;
-            color: #fff;
-            padding: 2rem;
-        }
         .container {
-            padding: 1rem;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
         }
         .section {
-            margin-bottom: 2rem;
+            padding: 2em 0;
+        }
+        .section h2 {
+            text-align: center;
+        }
+        .services, .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service, .gallery-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 1em;
+            width: 30%;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 5px;
         }
         footer {
-            background: #333;
+            background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            padding: 1em 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Academia de Jiu Jitsu</h1>
-        <nav>
-            <a href="#home">Início</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#aulas">Aulas</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#blog">Blog</a>
-            <a href="#contato">Contato</a>
-        </nav>
+        <div class="container">
+            <h1>Barbearia Exemplo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="home" class="banner">
-        <h2>Bem-vindo à nossa Academia de Jiu Jitsu!</h2>
-        <p>Treine com os melhores e alcance seus objetivos.</p>
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Bem-vindo à Barbearia Exemplo!</h2>
+            <p>Oferecemos cortes de cabelo e barba com qualidade e estilo.</p>
+        </div>
     </section>
 
-    <div class="container">
-        <section id="sobre" class="section">
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Corte de Cabelo</h3>
+                    <p>Modernos e clássicos, para todos os estilos.</p>
+                </div>
+                <div class="service">
+                    <h3>Barba</h3>
+                    <p>Barba feita com precisão e cuidado.</p>
+                </div>
+                <div class="service">
+                    <h3>Tratamento Capilar</h3>
+                    <p>Cuide da saúde dos seus cabelos com nossos tratamentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Conheça a nossa história e a equipe de instrutores. Estamos aqui para ajudar você a alcançar seus objetivos no Jiu Jitsu!</p>
-        </section>
+            <p>Somos uma barbearia com mais de 10 anos de experiência, oferecendo o melhor para nossos clientes com profissionais qualificados e um ambiente acolhedor.</p>
+        </div>
+    </section>
 
-        <section id="aulas" class="section">
-            <h2>Aulas e Programas</h2>
-            <p>Veja os tipos de aulas que oferecemos, horários e preços. Encontre o plano que melhor se adapta a você.</p>
-        </section>
-
-        <section id="galeria" class="section">
+    <section id="gallery" class="section">
+        <div class="container">
             <h2>Galeria</h2>
-            <p>Confira fotos e vídeos das nossas aulas e eventos.</p>
-        </section>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="corte1.jpg" alt="Corte de cabelo">
+                    <p>Corte moderno</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="corte2.jpg" alt="Barba feita">
+                    <p>Barba feita com precisão</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="corte3.jpg" alt="Tratamento capilar">
+                    <p>Tratamento capilar</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="blog" class="section">
-            <h2>Blog</h2>
-            <p>Leia nossos artigos e atualizações sobre técnicas, eventos e novidades da academia.</p>
-        </section>
-
-        <section id="contato" class="section">
+    <section id="contact" class="section">
+        <div class="container">
             <h2>Contato</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <p>Endereço: Rua Exemplo, 123 - Cidade - Estado</p>
-            <p>Telefone: (00) 0000-0000</p>
-            <p>E-mail: contato@academiajiujitsu.com.br</p>
-        </section>
-    </div>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@barbeariaexemplo.com</p>
+            <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Academia de Jiu Jitsu. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Barbearia Exemplo. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
