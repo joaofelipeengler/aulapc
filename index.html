@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Exemplo</title>
+    <title>Barbearia Sharp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
         header {
-            background-color: #333;
+            background: #333;
             color: #fff;
             padding: 1em 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
         }
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
         nav ul li {
             display: inline;
@@ -28,47 +36,77 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
         .container {
             width: 80%;
             margin: 0 auto;
-            overflow: hidden;
+            padding: 2em 0;
         }
         .section {
             padding: 2em 0;
+            text-align: center;
         }
         .section h2 {
-            text-align: center;
+            margin-bottom: 1em;
+            font-size: 1.5em;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+        .section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #333;
+            margin: 10px auto 0;
+        }
+        .section p {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 600px;
         }
         .services, .gallery {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .service, .gallery-item {
             background: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
             margin: 10px;
             padding: 1em;
             width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .gallery-item img {
             max-width: 100%;
-            border-radius: 5px;
+            border-radius: 8px;
         }
         footer {
-            background-color: #333;
+            background: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service, .gallery-item {
+                width: 100%;
+                box-sizing: border-box;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Barbearia Exemplo</h1>
+            <h1>Barbearia Sharp</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Início</a></li>
@@ -83,8 +121,8 @@
 
     <section id="home" class="section">
         <div class="container">
-            <h2>Bem-vindo à Barbearia Exemplo!</h2>
-            <p>Oferecemos cortes de cabelo e barba com qualidade e estilo.</p>
+            <h2>Bem-vindo à Barbearia Sharp!</h2>
+            <p>Oferecemos cortes de cabelo e barba com estilo e precisão. Experimente o melhor em cuidado pessoal.</p>
         </div>
     </section>
 
@@ -94,15 +132,15 @@
             <div class="services">
                 <div class="service">
                     <h3>Corte de Cabelo</h3>
-                    <p>Modernos e clássicos, para todos os estilos.</p>
+                    <p>Serviços de corte modernos e clássicos adaptados ao seu estilo.</p>
                 </div>
                 <div class="service">
                     <h3>Barba</h3>
-                    <p>Barba feita com precisão e cuidado.</p>
+                    <p>Precisão e cuidado para a barba perfeita.</p>
                 </div>
                 <div class="service">
                     <h3>Tratamento Capilar</h3>
-                    <p>Cuide da saúde dos seus cabelos com nossos tratamentos.</p>
+                    <p>Tratamentos especializados para manter seu cabelo saudável.</p>
                 </div>
             </div>
         </div>
@@ -111,7 +149,7 @@
     <section id="about" class="section">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p>Somos uma barbearia com mais de 10 anos de experiência, oferecendo o melhor para nossos clientes com profissionais qualificados e um ambiente acolhedor.</p>
+            <p>Com uma equipe de profissionais altamente qualificados, a Barbearia Sharp oferece um ambiente acolhedor e serviços de alta qualidade. Nossa missão é proporcionar uma experiência excepcional para cada cliente.</p>
         </div>
     </section>
 
@@ -125,11 +163,11 @@
                 </div>
                 <div class="gallery-item">
                     <img src="corte2.jpg" alt="Barba feita">
-                    <p>Barba feita com precisão</p>
+                    <p>Barba bem cuidada</p>
                 </div>
                 <div class="gallery-item">
                     <img src="corte3.jpg" alt="Tratamento capilar">
-                    <p>Tratamento capilar</p>
+                    <p>Tratamento capilar especializado</p>
                 </div>
             </div>
         </div>
@@ -139,13 +177,13 @@
         <div class="container">
             <h2>Contato</h2>
             <p>Telefone: (11) 1234-5678</p>
-            <p>Email: contato@barbeariaexemplo.com</p>
+            <p>Email: contato@barbeariasharp.com</p>
             <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Barbearia Exemplo. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Barbearia Sharp. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
