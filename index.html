@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Estilo</title>
+    <title>Barbearia Exemplo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #fff;
-            background: linear-gradient(135deg, #0033cc 25%, #ffffff 25%, #ffffff 50%, #0033cc 50%, #0033cc 75%, #ffffff 75%, #ffffff 100%);
-            background-size: 50px 50px;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #0033cc;
+            background-color: #333;
+            color: #fff;
             padding: 1em 0;
             text-align: center;
-            position: relative;
-        }
-        header h1 {
-            margin: 0;
-            color: #fff;
         }
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
-            text-align: center;
         }
         nav ul li {
             display: inline;
@@ -36,7 +28,6 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
         }
         .container {
             width: 80%;
@@ -45,20 +36,9 @@
         }
         .section {
             padding: 2em 0;
-            text-align: center;
         }
         .section h2 {
-            background-color: #000;
-            color: #fff;
-            padding: 0.5em;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .section p {
-            background-color: #000;
-            color: #fff;
-            padding: 1em;
-            border-radius: 5px;
+            text-align: center;
         }
         .services, .gallery {
             display: flex;
@@ -72,40 +52,23 @@
             margin: 10px;
             padding: 1em;
             width: 30%;
-            color: #333;
         }
         .gallery-item img {
             max-width: 100%;
             border-radius: 5px;
         }
         footer {
-            background-color: #0033cc;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em 0;
-        }
-        /* Red lines as decoration */
-        .diagonal-lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, transparent 75%, #ff0000 75%, #ff0000 77%, transparent 77%) repeat;
-            opacity: 0.4;
-            pointer-events: none;
-        }
-        .content {
-            position: relative;
-            z-index: 1;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="diagonal-lines"></div>
         <div class="container">
-            <h1>Barbearia Estilo</h1>
+            <h1>Barbearia Exemplo</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Início</a></li>
@@ -118,14 +81,14 @@
         </div>
     </header>
 
-    <section id="home" class="section content">
+    <section id="home" class="section">
         <div class="container">
-            <h2>Bem-vindo à Barbearia Estilo!</h2>
+            <h2>Bem-vindo à Barbearia Exemplo!</h2>
             <p>Oferecemos cortes de cabelo e barba com qualidade e estilo.</p>
         </div>
     </section>
 
-    <section id="services" class="section content">
+    <section id="services" class="section">
         <div class="container">
             <h2>Nossos Serviços</h2>
             <div class="services">
@@ -145,14 +108,14 @@
         </div>
     </section>
 
-    <section id="about" class="section content">
+    <section id="about" class="section">
         <div class="container">
             <h2>Sobre Nós</h2>
             <p>Somos uma barbearia com mais de 10 anos de experiência, oferecendo o melhor para nossos clientes com profissionais qualificados e um ambiente acolhedor.</p>
         </div>
     </section>
 
-    <section id="gallery" class="section content">
+    <section id="gallery" class="section">
         <div class="container">
             <h2>Galeria</h2>
             <div class="gallery">
@@ -172,17 +135,17 @@
         </div>
     </section>
 
-    <section id="contact" class="section content">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contato</h2>
             <p>Telefone: (11) 1234-5678</p>
-            <p>Email: contato@barbeariaestilo.com</p>
+            <p>Email: contato@barbeariaexemplo.com</p>
             <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Barbearia Estilo. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Barbearia Exemplo. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
