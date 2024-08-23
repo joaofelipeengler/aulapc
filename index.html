@@ -1,189 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Sharp</title>
+    <title>Engler - Artigos de Artes Marciais</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
             background-color: #f4f4f4;
-            line-height: 1.6;
+            color: #333;
         }
         header {
-            background: #333;
+            background-color: #333;
             color: #fff;
-            padding: 1em 0;
+            padding: 10px 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        header h1 {
-            margin: 0;
-            font-size: 2em;
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
+        nav a {
             color: #fff;
             text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 2em 0;
-        }
-        .section {
-            padding: 2em 0;
-            text-align: center;
-        }
-        .section h2 {
-            margin-bottom: 1em;
-            font-size: 1.5em;
-            color: #333;
-            position: relative;
+            padding: 10px 15px;
             display: inline-block;
         }
-        .section h2::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: #333;
-            margin: 10px auto 0;
+        nav a:hover {
+            background-color: #555;
         }
-        .section p {
-            margin: 0 auto;
-            width: 80%;
-            max-width: 600px;
+        .container {
+            padding: 20px;
         }
-        .services, .gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+        .article {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .service, .gallery-item {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 1em;
-            width: 30%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .gallery-item img {
-            max-width: 100%;
-            border-radius: 8px;
+        .article h2 {
+            margin-top: 0;
         }
         footer {
-            background: #333;
+            background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .service, .gallery-item {
-                width: 100%;
-                box-sizing: border-box;
-            }
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Barbearia Sharp</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Engler</h1>
+        <p>Seu portal para artigos de artes marciais</p>
     </header>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h2>Bem-vindo à Barbearia Sharp!</h2>
-            <p>Oferecemos cortes de cabelo e barba com estilo e precisão. Experimente o melhor em cuidado pessoal.</p>
-        </div>
-    </section>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Artigos</a>
+        <a href="#">Contato</a>
+    </nav>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Corte de Cabelo</h3>
-                    <p>Serviços de corte modernos e clássicos adaptados ao seu estilo.</p>
-                </div>
-                <div class="service">
-                    <h3>Barba</h3>
-                    <p>Precisão e cuidado para a barba perfeita.</p>
-                </div>
-                <div class="service">
-                    <h3>Tratamento Capilar</h3>
-                    <p>Tratamentos especializados para manter seu cabelo saudável.</p>
-                </div>
-            </div>
+    <div class="container">
+        <div class="article">
+            <h2>Introdução às Artes Marciais</h2>
+            <p>As artes marciais são práticas de combate e autodefesa com uma rica história e diversidade. Desde o Karate até o Jiu-Jitsu, cada arte marcial tem suas técnicas e filosofias únicas.</p>
         </div>
-    </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Com uma equipe de profissionais altamente qualificados, a Barbearia Sharp oferece um ambiente acolhedor e serviços de alta qualidade. Nossa missão é proporcionar uma experiência excepcional para cada cliente.</p>
+        <div class="article">
+            <h2>Benefícios das Artes Marciais</h2>
+            <p>Praticar artes marciais pode trazer uma série de benefícios, incluindo aumento da força física, disciplina mental e habilidades de autodefesa. Além disso, é uma excelente forma de melhorar a saúde geral e reduzir o estresse.</p>
         </div>
-    </section>
 
-    <section id="gallery" class="section">
-        <div class="container">
-            <h2>Galeria</h2>
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="corte1.jpg" alt="Corte de cabelo">
-                    <p>Corte moderno</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="corte2.jpg" alt="Barba feita">
-                    <p>Barba bem cuidada</p>
-                </div>
-                <div class="gallery-item">
-                    <img src="corte3.jpg" alt="Tratamento capilar">
-                    <p>Tratamento capilar especializado</p>
-                </div>
-            </div>
+        <div class="article">
+            <h2>Equipamentos Essenciais</h2>
+            <p>Para começar a praticar artes marciais, é importante ter os equipamentos certos. Isso pode incluir uniformes, protetores e acessórios específicos para cada modalidade.</p>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Telefone: (46) 99924 1422 </p>
-            <p>Email: contato@barbeariasharp.com</p>
-            <p>Endereço: Rua Exemplo, 123 - Capanema - PR</p>
-        </div>
-    </section>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Barbearia Sharp. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Engler. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
