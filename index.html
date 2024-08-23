@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engler - Artigos de Artes Marciais</title>
+    <title>Engler - Loja de Artes Marciais</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,17 +36,25 @@
         .container {
             padding: 20px;
         }
-        .article {
+        .product {
             background-color: #fff;
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .article h2 {
+        .product h2 {
             margin-top: 0;
         }
-        footer {
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .footer {
             background-color: #333;
             color: #fff;
             text-align: center;
@@ -61,35 +68,43 @@
 <body>
     <header>
         <h1>Engler</h1>
-        <p>Seu portal para artigos de artes marciais</p>
+        <p>Loja de Artes Marciais - Equipamentos e Acessórios</p>
     </header>
 
     <nav>
         <a href="#">Início</a>
-        <a href="#">Sobre</a>
-        <a href="#">Artigos</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre Nós</a>
         <a href="#">Contato</a>
     </nav>
 
     <div class="container">
-        <div class="article">
-            <h2>Introdução às Artes Marciais</h2>
-            <p>As artes marciais são práticas de combate e autodefesa com uma rica história e diversidade. Desde o Karate até o Jiu-Jitsu, cada arte marcial tem suas técnicas e filosofias únicas.</p>
+        <div class="product">
+            <h2>Kimono de Jiu-Jitsu</h2>
+            <img src="kimono.jpg" alt="Kimono de Jiu-Jitsu">
+            <p>Kimono de alta qualidade para Jiu-Jitsu, feito com material resistente e confortável. Disponível em vários tamanhos.</p>
+            <p><strong>Preço: R$ 299,00</strong></p>
         </div>
 
-        <div class="article">
-            <h2>Benefícios das Artes Marciais</h2>
-            <p>Praticar artes marciais pode trazer uma série de benefícios, incluindo aumento da força física, disciplina mental e habilidades de autodefesa. Além disso, é uma excelente forma de melhorar a saúde geral e reduzir o estresse.</p>
+        <div class="product">
+            <h2>Luvas de Boxe</h2>
+            <img src="luvas.jpg" alt="Luvas de Boxe">
+            <p>Luvas de boxe acolchoadas para maior proteção durante os treinos. Feitas com material durável e respirável.</p>
+            <p><strong>Preço: R$ 199,00</strong></p>
         </div>
 
-        <div class="article">
-            <h2>Equipamentos Essenciais</h2>
-            <p>Para começar a praticar artes marciais, é importante ter os equipamentos certos. Isso pode incluir uniformes, protetores e acessórios específicos para cada modalidade.</p>
+        <div class="product">
+            <h2>Protetor Bucal</h2>
+            <img src="protetor.jpg" alt="Protetor Bucal">
+            <p>Protetor bucal com ajuste personalizado para proteger seus dentes e gengivas durante a prática de esportes de combate.</p>
+            <p><strong>Preço: R$ 49,00</strong></p>
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Engler. Todos os direitos reservados.</p>
+        <p>Endereço: Rua Exemplo, 123 - Cidade - Estado</p>
+        <p>Email: contato@engler.com.br | Telefone: (11) 1234-5678</p>
     </footer>
 </body>
 </html>
